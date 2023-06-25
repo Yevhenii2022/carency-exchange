@@ -4,6 +4,14 @@ import { getCurrentPosition } from 'service/service';
 export const fetchBaseCurrency = createAsyncThunk(
   'curency/fetch',
   async (credentials, thunkAPI) => {
+
+    const state = thunkAPI.getState();
+    const persistedbaseCurency = state.curency.baseCurency;
+
+    if (persistedbaseCurency) {
+      // If there is no token, exit without performing any request
+      return thunkAPI.rejectWithValue('Unable to fetch user');
+    }
     try {
       const res = await getCurrentPosition(credentials);
 
