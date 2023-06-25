@@ -1,7 +1,10 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { Link, Outlet } from 'react-router-dom';
+import { selectCurrency } from 'redux/selector';
 
 export default function Loyaut() {
+  const baseCurency = useSelector(selectCurrency);
   return (
     <>
       <header>
@@ -15,6 +18,7 @@ export default function Loyaut() {
             </li>
           </ul>
         </nav>
+        <p>Base curency: {baseCurency}</p>
       </header>
       <Outlet />
     </>
