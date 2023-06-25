@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/carency-exchange/static/css/main.7acaea2f.css",
-    "main.js": "/carency-exchange/static/js/main.33ab27b5.js",
+    "main.js": "/carency-exchange/static/js/main.730d26f0.js",
     "index.html": "/carency-exchange/index.html",
     "main.7acaea2f.css.map": "/carency-exchange/static/css/main.7acaea2f.css.map",
-    "main.33ab27b5.js.map": "/carency-exchange/static/js/main.33ab27b5.js.map"
+    "main.730d26f0.js.map": "/carency-exchange/static/js/main.730d26f0.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.33ab27b5.js"
+    "static/js/main.730d26f0.js"
   ]
 }
